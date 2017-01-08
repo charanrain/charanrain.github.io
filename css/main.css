@@ -1,0 +1,138 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  color: #1871E6;
+}
+.banner{
+  background: #303336;
+}
+.banner h1{
+  color: #1871E6;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner h2{
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.banner-right{
+  padding: 40px 0;
+}
+.brand{
+  display: table;
+  margin: 0 auto;
+  float: none;
+  padding: 10px;
+  border: 2px solid #067CF2;
+}
+.brand span{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.tagline{
+  padding: 90px 60px;
+  text-align: justify;
+  font-size: 20px;
+  color: #95989A;
+  line-height: 2;
+  letter-spacing: 1.2px;
+}
+.module-1{
+  background: #1871E6;
+  color: #fff;
+
+}
+.module-1 h2{
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .module-content{
+    padding: 75px 0 449px;
+    background: url(../img/module-bg.png) no-repeat center bottom;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+  }
+.showoff{
+  padding: 70px 0;
+}
+.showoff h2{
+  text-align: center;
+  font-weight: 300;
+  font-size: 45px;
+color: #95989A;
+
+}
+.show-content{
+  clear: both;
+ padding: 60px 0;
+
+}
+.show-content h3{
+color: #95989A;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+.show-content span{
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: #95989A;
+}
+footer{
+  background: #303437;
+}
+.fotter-content{
+  padding: 80px 0 40px;
+  color: #1e2223;
+}
+.fotter-content h2{
+  text-align: center;
+  color: #1e2223;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+.fotter-content h2:before{
+  content:'\f21d';
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: -61px;
+  left: 45%;
+  font-size: 45px;
+}
+.fotter-content h3{
+  text-align: center;
+  color: #1e2223;
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+}
+.social ul{
+  margin: 0 auto;
+
+  display: table;
+  padding: 40px 0;
+  list-style-type: none;
+}
+.social ul li{
+    float: left;
+    margin: 0 20px;
+}
+.social li a{
+  text-decoration: none;
+  display: block;
+  color: #1e2223;
+  font-size: 36px;
+
+}
