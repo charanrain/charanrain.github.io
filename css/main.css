@@ -145,6 +145,7 @@ a{
   margin: 0 auto;
   float: none;
   padding: 10px;
+  animation-fill-mode: both;
   border: 2px solid #067CF2;
   animation-name: fadein;
   animation-duration: 2s;
