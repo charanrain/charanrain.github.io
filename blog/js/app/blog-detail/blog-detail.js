@@ -5,7 +5,7 @@ var blog_detail = angular.module('blog_detail', []);
 blog_detail.component('blogDetail', {
   templateUrl:'templates/blog-detail.html',
   controller: function($routeParams, $scope){
-      $scope.blogItems = [
+      var blogItems = [
         {
           "userId": 1,
           "id": 1,
