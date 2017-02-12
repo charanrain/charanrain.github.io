@@ -7,7 +7,7 @@ blog_list.component('blogList', {
     $http.get('core/posts/blog-data.json').then(successData,errorData);
 function successData(response, config, status, statusText){
   var blogItem = response.data;
-
+console.log(blogItem);
   $scope.posts = blogItem;
   angular.forEach(blogItem, function(post){
     if($routeParams.id == post.id){
