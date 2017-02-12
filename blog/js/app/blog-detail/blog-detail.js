@@ -44,7 +44,6 @@ blog_detail.component('blogDetail', {
         },
       ];
 
-      $scope.title = 'Blog' + $routeParams.id;
 $scope.notFound = true;
       angular.forEach(blogItems, function(post){
         if($routeParams.id == post.id){
