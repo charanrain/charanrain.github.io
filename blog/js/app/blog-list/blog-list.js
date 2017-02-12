@@ -6,14 +6,7 @@ blog_list.component('blogList', {
   controller: function($http,$routeParams, $scope){
     $http.get('core/posts/blog-data.json').then(successData,errorData);
 function successData(response, config, status, statusText){
-  var blogItem = response.data;
-console.log(blogItem);
-  $scope.posts = blogItem;
-  angular.forEach(blogItem, function(post){
-
-      $scope.list = post;
-    
-  });
+  var lists = response.data;
 }
 function errorData(response, config, status, statusText){
 
