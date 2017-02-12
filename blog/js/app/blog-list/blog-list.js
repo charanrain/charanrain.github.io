@@ -6,7 +6,8 @@ blog_list.component('blogList', {
   controller: function($http,$routeParams, $scope){
     $http.get('core/posts/blog-data.json').then(successCallback,errorCallback);
 function successCallback(response, config, status, statusText){
-  $scope.lists = response.data;
+var items = response.data;
+$scope.lists = items;
 }
 function errorCallback(response, config, status, statusText){
 
