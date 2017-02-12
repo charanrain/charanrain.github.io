@@ -10,10 +10,9 @@ function successData(response, config, status, statusText){
 console.log(blogItem);
   $scope.posts = blogItem;
   angular.forEach(blogItem, function(post){
-    if($routeParams.id == post.id){
-      $scope.notFound = false;
+
       $scope.list = post;
-    }
+    
   });
 }
 function errorData(response, config, status, statusText){
