@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1 id="header">List of countries</h1>
+
+<ul id="list">
+
+<ul>
+<script>
+function listFilter(header, list) {
+var form = $("<form>").attr({"class":"filterform","action":"#"}),
+    input = $("<input>").attr({"class":"filterinput","type":"text"});
+$(form).append(input).appendTo(header);
+$.getJSON('http://charanrain.github.io/js/hackernews.json', function(result){
+$.each(result, function(i, field){
+            $("#list").append('<li><a href="#">'+field.title+'</a></li>');
+        });
+});
+$(input).change( function () {
+  var filter = $(this).val();
+  if (filter) {
+    $(list).find("a:not(:contains(" + filter + "))").parent().slideUp();
+    $(list).find("a:contains(" + filter + ")").parent().slideDown();
+  } else {
+    $(list).find("li").slideDown();
+  }
+});
+}
+listFilter($("#header"), $("#list"));
+</script>
+</body>
+</html>
