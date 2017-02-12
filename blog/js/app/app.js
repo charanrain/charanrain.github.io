@@ -1,10 +1,7 @@
 'use strict'
 
 var app = angular.module('blog', ['blog_detail','blog-list','ngRoute','ngResource']);
-app.config(function($routeProvider, $locationProvider){
-  $locationProvider.html5Mode({
-    enabled:true
-  });
+app.config(function($routeProvider){
   $routeProvider.
   when('/',{
     template:'<blog-List></blog-List>'
