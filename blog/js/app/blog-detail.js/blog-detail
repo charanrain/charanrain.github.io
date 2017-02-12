@@ -1,3 +1,0 @@
-'use strict'
-
-var blog_list = angular.module('blog-list', []);
