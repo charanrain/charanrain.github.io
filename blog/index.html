@@ -45,10 +45,10 @@
           </button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
+        <div id="navbar" class="navbar-collapse collapse" ng-controller="postMe">
+          <form class="navbar-form navbar-right" role="form" ng-submit="dummy(ine)">
             <div class="form-group">
-              <input type="text" ng-model="name" placeholder="Email" class="form-control">
+              <input type="text" ng-model="name" ng-model="ine.name" placeholder="Email" class="form-control">
             </div>
             <div class="form-group">
               <input type="password" placeholder="Password" class="form-control">
